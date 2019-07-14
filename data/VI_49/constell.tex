@@ -1,0 +1,299 @@
+%
+% WDCPAPER.TEX
+%
+% Paper sent to the World Data Center describing the catalogues of
+% constellation boundary data.
+%
+% A C Davenhall (ROE).                 1/8/88.
+% A C Davenhall (ROE).  {Revised}      20/2/90.
+%
+\documentstyle[12pt]{article}
+\title{A Catalogue of Constellation Boundary Data}
+\author{A.C. Davenhall \thanks{Royal Observatory, Blackford Hill,
+           Edinburgh, EH9 3HJ, Scotland.}  \\
+        S.K. Leggett \thanks{Dept. of Astronomy, University of
+           Edinburgh, Blackford Hill, Edinburgh, EH9 3HJ, Scotland.}
+           \thanks{Present address, US Naval Observatory, Flagstaff,
+           Arizona, USA.}  }
+\date{February 1990}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+%
+% Start document.
+%
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+A computer readable catalogue of constellation boundary data is
+presented in a form suitable for the construction of star charts and
+atlases. Two files are available, one for equator and equinox 1875 and
+the other for equator and equinox 2000.
+\end{abstract}
+
+\section{INTRODUCTION}
+
+The definitive list of constellation boundary data was published by Delporte
+(1930). A computer-readable catalogue compiled from these data has been produced
+by Roman (1987) and is available from the International Network of Astronomical
+Data Centers (catalogue number 6042). However, the format of this catalogue has
+been chosen to facilitate locating the constellation in which a given object
+lies and is unsuited to the construction of star charts and atlases. The present
+catalogue was also constructed from Delporte's lists, but the files are arranged
+in a format suitable for constructing star charts and atlases.
+
+Two files are available in a computer-readable form. The first gives the
+boundaries as delineated by Delporte, in their original orientation, 1875. The
+second file gives the boundaries computed for equator and equinox 2000. In
+equator and equinox 1875 the lines joining the corners of the constellations
+were great circles of right ascension and parallels of declination. However,
+precession to equator and equinox 2000 distorts the boundaries so that they no
+longer lie along lines of constant right ascension or declination. Thus, prior
+to precession to equator and equinox 2000, points were interpolated at one
+degree intervals along the boundaries in order that they should continue to
+enclose the same area of sky (and thus the same set of stars).
+
+\section{THE CATALOGUE}
+
+Brief details of the two files of the catalogue are given below.
+
+\subsection{Equator and equinox 1875 file}
+
+The data in this file was taken directly from Delporte with the exception that
+several extra points were added to the constellation Octans (which covers the
+South Pole) in order to facilitate plotting in some projections. These extra
+points `traverse' the line of 0hr right ascension to the Pole and `return' at
+24hr.
+
+The file consists of the right ascension and declination of every corner of
+every constellation. Each record consists of a single point along the
+constellation boundary and contains the right ascension and declination of the
+point and an abbreviation identifying the constellation of which it is a part.
+The abbreviations used to identify each constellation are taken from Delporte,
+and for completeness they are listed together with the full name in Table 1. All
+the abbreviations consist of three characters except those for Serpens Caput and
+Serpens Cauda which contain four. All records referring to a given constellation
+occur contiguously in the file. Successive records correspond to successive
+points along the constellation boundary. The last point in the constellation
+should be joined to the first. Table 2 gives details of the structure of each
+record.
+
+The following fragment of FORTRAN could be used to read a single record from the
+file
+
+\begin{verbatim}
+
+      REAL RA, DEC
+      CHARACTER*4 CONNAM
+
+      .
+      .
+
+      READ(13, 1000) RA, DEC, CONNAM
+ 1000 FORMAT(F8.5, 1X, F9.5, 1X, A4)
+
+      .
+      .
+
+\end{verbatim}
+
+\subsection{Equator and equinox 2000 file}
+
+In equator and equinox 1875, lines joining the corners of constellations are
+either great circles of right ascension or parallels of declination. When the
+coordinates are converted to equator and equinox 2000, the boundaries are
+distorted by precession so that they no longer lie along lines of constant right
+ascension or declination. In order that the new boundaries should enclose the
+same area of sky (and thus include the same stars) it is necessary that points
+should be interpolated along the boundary prior to calculating the precession.
+Thus the orientation 2000 file was generated from the orientation 1875 file with
+points interpolated at one-degree intervals along the boundaries. When the file
+is used to construct a chart, a smooth curve should be drawn through the
+interpolated points (but obviously not through those original points that define
+corners).
+
+Records in the file are ordered into constellations and successive corners
+within each constellation in a similar fashion to the orientation 1875 file.
+Table 3 lists the details of the structure of each record. Like the orientation
+1875 file, each record contains the right ascension and declination of a point
+together with an abbreviation for the constellation to which it belongs. However
+an additional field indicates whether the point is an original point taken
+directly from Delporte (code `O') or an interpolated point (code `I'). It should
+be noted that original points can be points along a meridian or parallel where
+three constellations meet as well as corners.
+
+The following fragment of FORTRAN could be used to read a single record from the
+file
+
+\begin{verbatim}
+
+      REAL RA, DEC
+      CHARACTER*4 CONNAM
+      CHARACTER*1 TYPE
+
+      .
+      .
+
+      READ(13, 1001) RA, DEC, CONNAM, TYPE
+ 1001 FORMAT(F10.7, 1X, F11.7, 1X, A4, 1X A1)
+
+      .
+      .
+
+\end{verbatim}
+
+\section{DISCUSSION}
+
+The present catalogue of constellation boundary data is complementary to that of
+Roman (1987). Roman's catalogue should be used to determine which constellation
+an object lies in. The present catalogue is more suited to the construction of
+star charts and atlases.
+
+\section{ACKNOWLEDGEMENTS}
+
+We are grateful to Mr D.A. Pickup for useful discussions about the format of
+Delporte's lists and the effect of precession on the shape of the constellation
+boundaries and to Dr W.H. Warren Jr for several useful suggestions. All
+computations were carried out on the Starlink VAX 11/780 at the Royal
+Observatory Edinburgh, and the catalogue was precessed using the SCAR
+astronomical database software available within the Starlink software
+collection. This work was carried out as part of a contract with the Edinburgh
+publishers John Bartholomew and Son Ltd. to provide data for a revised edition
+of `Norton's Star Atlas'.
+
+\section{REFERENCES}
+
+Delporte, E. 1930, {\it Delimitation Scientifique des Constellations}
+(Cambridge: Cambridge University Press).
+\\[2.0ex]
+Roman, N.G. 1987, {\it Publ. Astron. Soc. Pac.} \underline{99},
+pp695-699.
+
+%
+% Constellation names and abbreviations.
+%
+
+\begin{table}
+
+\begin{tabular}{|l|l|l|l|l|}\hline
+Abbreviation  &  Constellation Name & &  Abbreviation  &  Constellation Name \\ \hline
+AND  &  Andromeda      & &  DOR  &  Dorado  \\
+ANT  &  Antila         & &  DRA  &  Draco  \\
+APS  &  Apus           & &  EQU  &  Equuleus  \\
+AQR  &  Aquarius       & &  ERI  &  Eridanus  \\
+AQL  &  Aquila         & &  FOR  &  Fornax  \\
+ARA  &  Ara            & &  GEM  &  Gemini  \\
+ARI  &  Aries          & &  GRU  &  Grus  \\
+AUR  &  Auriga         & &  HER  &  Hercules  \\
+BOO  &  Bootes         & &  HOR  &  Horologium  \\
+CAE  &  Caelum         & &  HYA  &  Hydra  \\
+CAM  &  Camelopardis   & &  HYI  &  Hydrus  \\
+CNC  &  Cancer         & &  IND  &  Indus  \\
+CVN  &  Canes Venatici & &  LAC  &  Lacerta  \\
+CMA  &  Canis Major    & &  LEO  &  Leo  \\
+CMI  &  Canis Minor    & &  LMI  &  Leo Minor  \\
+CAP  &  Capricornus    & &  LEP  &  Lepus  \\
+CAR  &  Carina         & &  LIB  &  Libra  \\
+CAS  &  Cassiopeia     & &  LUP  &  Lupus  \\
+CEN  &  Centaurus      & &  LYN  &  Lynx  \\
+CEP  &  Cepheus        & &  LYR  &  Lyra  \\
+CET  &  Cetus          & &  MEN  &  Mensa  \\
+CHA  &  Chamaeleon     & &  MIC  &  Microscopium  \\
+CIR  &  Circinus       & &  MON  &  Monoceros  \\
+COL  &  Columba        & &  MUS  &  Musca  \\
+COM  &  Coma Berenices & &  NOR  &  Norma  \\
+CRA  &  Corona Australis & &  OCT  &  Octans  \\
+CRB  &  Corona Borealis  & &  OPH  &  Ophiuchus  \\
+CRV  &  Corvus         & & ORI  &  Orion  \\
+CRT  &  Crater         & &  PAV  &  Pavo  \\
+CRU  &  Crux           & &  PEG  &  Pegasus  \\
+CYG  &  Cygnus         & &  PER  &  Perseus  \\
+DEL  &  Delphinus      & &  PHE  &  Phoenix  \\ \hline
+\end{tabular}
+
+\begin{center}
+Table 1: Abbreviations for constellation names.
+\end{center}
+
+\end{table}
+
+\begin{table}
+
+\begin{tabular}{|l|l|l|l|l|}\hline
+Abbreviation  &  Constellation Name & &  Abbreviation  &  Constellation Name \\ \hline
+
+PIC  &  Pictor         & &  SEX  &  Sextans  \\
+PSC  &  Pisces         & &  TAU  &  Taurus  \\
+PSA  &  Pisces Austrinus & &  TEL  &  Telescopium  \\
+PUP  &  Puppis         & &  TRI  &  Triangulum  \\
+PYX  &  Pyxis          & &  TRA  &  Triangulum Australe  \\
+RET  &  Reticulum      & &  TUC  &  Tucana  \\
+SGE  &  Sagitta        & &  UMA  &  Ursa Major  \\
+SGR  &  Sagittarius    & &  UMI  &  Ursa Minor  \\
+SCO  &  Scorpius       & &  VEL  &  Vela  \\
+SCL  &  Sculptor       & &  VIR  &  Virgo  \\
+SCT  &  Scutum         & &  VOL  &  Volans  \\
+SER1 &  Serpens Caput  & &  VUL  &  Vulpecula  \\
+SER2 &  Serpens Cauda  & &  & \\ \hline
+\end{tabular}
+
+\begin{center}
+Table 1 (continued): Abbreviations for constellation names.
+\end{center}
+
+\end{table}
+
+%
+%  details for equator and equinox 1985 file.
+%
+
+\begin{table}
+
+\begin{tabular}{|l|l|}\hline
+Number of records           &  1566  \\
+Record size (bytes)         &  25    \\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|l|l|}\hline
+Field           & Units           & Starting byte &  Format  \\ \hline
+Right ascension & Decimal hours   & 1             &  F8.5    \\
+Declination     & Decimal degrees & 10            &  F9.5    \\
+Constellation   &                 & 20            &  A4      \\
+Type of point   &                 & 25            &  A1      \\ \hline
+\end{tabular}
+
+\begin{center}
+Table 2: Format of equator and equinox 1875 file.
+\end{center}
+
+\end{table}
+
+
+%
+% details of equator and equinox 2000 file.
+%
+
+\begin{table}
+
+\begin{tabular}{|l|l|}\hline
+Number of records                &  13422  \\
+Record size (bytes)              &  29     \\ \hline
+\end{tabular}
+
+\begin{tabular}{|l|l|l|l|}\hline
+Field           & Units           & Starting byte &  Format  \\ \hline
+Right ascension & Decimal hours   & 1             &  F10.7   \\
+Declination     & Decimal degrees & 12            &  F11.7   \\
+Constellation   &                 & 24            &  A4      \\
+Type of point   &                 & 29            &  A1      \\ \hline
+\end{tabular}
+
+\begin{center}
+Table 3: Format of equator and equinox 2000 file.
+\end{center}
+
+\end{table}
+
+\end{document}

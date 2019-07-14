@@ -1,0 +1,67 @@
+name,type,ra,dec,magnitude,proper_name,ra_original,dec_original,code,name_2
+M11,open cluster,18.851666666666667,-6.266666666666667,5.8,Wild Duck Cluster,18h 51.1m,-6d 16',ᚸ,Wild Duck Cluster
+M13,globular cluster,16.695,36.46666666666667,5.8,Hercules Cluster,16h 41.7m,+36d 28',✤,Hercules Cluster
+M15,globular cluster,21.5,12.166666666666666,6.2,,21h 30m,+12d 10',✤,M15
+M16,open cluster,18.313333333333333,-13.783333333333333,6.0,Eagle Nebula,18h 18.8m,-13d 47',ᚸ,Eagle Nebula
+M17,"emission nebula, open cluster",18.346666666666668,-16.183333333333334,6.0,Swan Nebula,18h 20.8m,-16d 11',◈,Swan Nebula
+M19,globular cluster,17.043333333333333,-26.266666666666666,6.2,,17h 2.6m,-26d 16',✤,M19
+M2,globular cluster,21.558333333333334,-0.8166666666666667,6.5,,21h 33.5m,-0d 49',✤,M2
+M20,emission nebula,18.045,-22.966666666666665,6.3,Trifid Nebula,18h 2.7m,-22d 58',ᛥ,Trifid Nebula
+M21,open cluster,18.07,-22.483333333333334,5.9,,18h 4.2m,-22d 29',ᚸ,M21
+M22,globular cluster,18.606666666666666,-23.9,5.1,,18h 36.4m,-23d 54',✤,M22
+M23,open cluster,17.951666666666668,-18.983333333333334,5.5,,17h 57.1m,-18d 59',ᚸ,M23
+M24,star cloud,18.275,-18.833333333333332,4.6,Small Sagittarius Star Cloud,18h 16.5m,-18d 50',⎈,Small Sagittarius Star Cloud
+M25,open cluster,18.53,-19.116666666666667,4.6,,18h 31.8m,-19d 7',ᚸ,M25
+M3,globular cluster,13.703333333333333,28.383333333333333,6.2,,13h 42.2m,+28d 23',✤,M3
+M31,spiral galaxy,0.7116666666666667,41.266666666666666,3.4,Andromeda Galaxy,00h 42.7m,+41d 16',⅏,Andromeda Galaxy
+M33,spiral galaxy,1.565,30.65,5.7,Pinwheel Galaxy,01h 33.9m,+30d 39',⅏,Pinwheel Galaxy
+M34,open cluster,2.7016666666666667,42.766666666666666,5.2,,02h 42.1m,+42d 46',ᚸ,M34
+M35,open cluster,6.15,24.35,5.1,,6h 9m,+24d 21',ᚸ,M35
+M36,open cluster,5.605,34.13333333333333,6.0,,5h 36.3m,+34d 08',ᚸ,M36
+M37,open cluster,5.871666666666666,32.55,5.6,,5h 52.3m,+32d 33',ᚸ,M37
+M38,open cluster,5.4783333333333335,35.85,6.4,,5h 28.7m,+35d 51',ᚸ,M38
+M39,open cluster,21.528333333333332,48.43333333333333,4.6,,21h 31.7m,+48d 26',ᚸ,M39
+M4,globular cluster,16.393333333333334,-26.533333333333335,5.6,,16h 23.6m,-26d 32',✤,M4
+M41,open cluster,6.766666666666667,-20.75,4.5,,6h 46m,-20d 45',ᚸ,M41
+M42,emission nebula,5.588333333333333,-5.383333333333334,4.0,Orion Nebula,5h 35.3m,-5d 23',ᛥ,Orion Nebula
+M44,open cluster,8.666666666666666,19.666666666666668,3.1,Beehive Cluster,8h 40m,+19d 40',ᚸ,Beehive Cluster
+M45,open cluster,3.783333333333333,24.116666666666667,1.2,Seven Sisters,3h 47m,+24d 7',ᚸ,Seven Sisters
+M46,open cluster,7.696666666666666,-14.816666666666666,6.1,,7h 41.8m,-14d 49',ᚸ,M46
+M47,open cluster,7.61,-14.483333333333333,4.4,,7h 36.6m,-14d 29',ᚸ,M47
+M48,open cluster,8.228333333333333,-5.75,5.8,,8h 13.7m,-5d 45',ᚸ,M48
+M5,globular cluster,15.31,2.0833333333333335,5.7,,15h 18.6m,+2d 5',✤,M5
+M50,open cluster,7.035,-8.383333333333333,5.9,,7h 2.1m,-8d 23',ᚸ,M50
+M55,globular cluster,19.666666666666668,-30.966666666666665,6.3,,19h 40m,-30d 58',✤,M55
+M6,open cluster,17.671666666666667,-32.25,4.0,Butterfly Cluster,17h 40.3m,-32d 15',ᚸ,Butterfly Cluster
+M62,globular cluster,17.02,-30.116666666666667,6.5,,17h 1.2m,-30d 7',✤,M62
+M7,open cluster,17.898333333333333,-34.8,3.3,,17h 53.9m,-34d 48',ᚸ,M7
+M8,emission nebula,18.061666666666667,-24.383333333333333,5.0,Lagoon Nebula,18h 3.7m,-24d 23',ᛥ,Lagoon Nebula
+M92,globular cluster,17.285,43.13333333333333,6.4,,17h 17.1m,+43d 8',✤,M92
+M93,open cluster,7.741666666666667,-23.85,6.2,,7h 44.5m,-23d 51',ᚸ,M93
+NGC129,open cluster,0.5,60.21666666666667,6.5,,0h 30m,+60d 13',ᚸ,NGC129
+NGC457,open cluster,1.325,58.28333333333333,6.4,,1h 19.5m,+58d 17',ᚸ,NGC457
+NGC654,open cluster,1.7333333333333334,61.88333333333333,6.5,,1h 44m,+61d 53',ᚸ,NGC654
+NGC752,open cluster,1.9616666666666667,37.78333333333333,5.7,,1h 57.7m,+37d 47',ᚸ,NGC752
+NGC869,open cluster,2.3183333333333334,57.13333333333333,5.3,,2h 19.1m,+57d 8',ᚸ,NGC869
+NGC884,open cluster,2.375,57.15,6.1,,2h 22.5m,+57d 9',ᚸ,NGC884
+NGC1528,open cluster,4.255,51.21666666666667,6.4,,4h 15.3m,+51d 13',ᚸ,NGC1528
+NGC1545,open cluster,4.348333333333334,50.25,6.2,,4h 20.9m,+50d 15',ᚸ,NGC1545
+NGC1647,open cluster,4.765,19.1,6.4,,4h 45.9m,+19d 6',ᚸ,NGC1647
+NGC1980,"emission nebula, open cluster",5.59,-5.916666666666667,2.5,,5h 35.4m,-5d 55',◈,NGC1980
+NGC2169,open cluster,6.1433333333333335,13.966666666666667,5.9,,6h 8.6m,+13d 58',ᚸ,NGC2169
+NGC2232,open cluster,6.466666666666667,-4.85,3.9,,6h 28m,-4d 51',ᚸ,NGC2232
+NGC2244,"emission nebula, open cluster",6.531666666666666,4.95,4.8,Rosette Nebula,6h 31.9m,+4d 57',◈,Rosette Nebula
+NGC2264,"emission nebula, open cluster",6.683333333333334,9.9,3.9,Christmas Tree Cluster,6h 41m,+9d 54',◈,Christmas Tree Cluster
+NGC2281,open cluster,6.805,41.083333333333336,5.4,,6h 48.3m,+41d 5',ᚸ,NGC2281
+NGC2301,open cluster,6.863333333333333,0.4666666666666667,6.0,,6h 51.8m,+0d 28',ᚸ,NGC2301
+NGC2354,open cluster,7.238333333333333,-25.7,6.5,,7h 14.3m,-25d 42',ᚸ,NGC2354
+NGC2362,open cluster,7.3116666666666665,-24.95,4.1,,7h 18.7m,-24d 57',ᚸ,NGC2362
+NGC2527,open cluster,8.083333333333334,-28.15,6.5,,8h 5m,-28d 9',ᚸ,NGC2527
+NGC2539,open cluster,8.176666666666666,-12.816666666666666,6.5,,8h 10.6m,-12d 49',ᚸ,NGC2539
+NGC6633,open cluster,18.455,6.516666666666667,4.6,,18h 27.3m,+6d 31',ᚸ,NGC6633
+NGC6882,open cluster,20.2,26.483333333333334,5.7,,20h 12m,+26d 29',ᚸ,NGC6882
+NGC6940,open cluster,20.573333333333334,28.283333333333335,6.3,,20h 34.4m,+28d 17',ᚸ,NGC6940
+NGC7000,emission nebula,21.983333333333334,44.516666666666666,4.0,North American Nebula,21h 59m,+44d 31',ᛥ,North American Nebula
+NGC7160,open cluster,21.895,62.6,6.1,,21h 53.7m,+62d 36',ᚸ,NGC7160
+NGC7243,open cluster,22.253333333333334,49.9,6.4,,22h 15.2m,+49d 54',ᚸ,NGC7243
+NGC7686,open cluster,23.501666666666665,49.13333333333333,5.6,,23h 30.1m,+49d 8',ᚸ,NGC7686
