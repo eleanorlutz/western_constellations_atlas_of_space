@@ -72,7 +72,7 @@ The star colors are somewhat close to the true colors, but they’re exaggerated
 ![HYG Database](./readme_figures/star_borders.jpg)
 
 #### Unicode Symbols in Matplotlib
-In this map I used different Unicode characters to mark each of the different kinds of non-star bright objects, like nebulae, galaxies, and star clusters ( &#5816; &#10020; &#9672; &#5861; &#9096; &#8527; &#5819; ). I used the [Unicode Character Table](https://unicode-table.com/en/) to pick out my favorite characters, and I followed the tutorial [How to plot unicode characters with Matplotlib](https://jdhao.github.io/2018/04/08/matplotlib-unicode-character/) to plot each Unicode character in Matplotlib.
+In this map I used different Unicode characters to mark each of the different kinds of non-star bright objects, like nebulae, galaxies, and star clusters ( &#5816; &#10020; &#9672; &#5861; &#9096; &#8527; &#5819; ). I used the [Unicode Character Table](https://symbl.cc/en/) to pick out my favorite characters, and I followed the tutorial [How to plot unicode characters with Matplotlib](https://jdhao.github.io/2018/04/08/matplotlib-unicode-character/) to plot each Unicode character in Matplotlib.
 
 #### Great-circle distance
 The lines connecting each of the stars in this map visualizes the *Great Circle Distance*, which is the shortest path between the two points on a globe. These lines don't always look straight on the map, because the 2D map projection distorts the actual spherical 3D data (to illustrate, all the black lines in the Earth examples below show the great circle distance between the same two points). The red line visualizes how a line that *appears* straight on a Plate Carrée projection (far left) is not actually straight.
@@ -160,7 +160,7 @@ To update these illustrations from Urania’s Mirror, I first mapped each conste
 - [Astronomy](https://openstax.org/details/astronomy). Andrew Fraknoi, David Morrison, Sidney C. Wolff et al. OpenStax 2016.
 - [Concise Catalog of Deep-sky Objects](https://www.springer.com/us/book/9781852338510). W.H. Finlay. Springer 2003.
 - [Urania's mirror, or, A view of the heavens](https://www.loc.gov/item/2013645050/). Richard Rouse Bloxam, Sidney Hall, and Jehoshaphat Aspin. Samuel Leigh 1824.
-- [Unicode Character Table](https://unicode-table.com/en/). Sergei Asanov and Oleg Grigoriev. 2019.
+- [Unicode Character Table](https://symbl.cc/en/). Sergei Asanov and Oleg Grigoriev. 2019.
 - [HYG Database version 3](http://www.astronexus.com/hyg). David Nash. 2019.
 - [Western Constellation Lines](http://hemel.waarnemen.com/download/#cetera). Marc van der Sluys 2005.
 - [Catalogue of Constellation Boundary Data](http://cdsarc.u-strasbg.fr/viz-bin/Cat?VI/49#sRM2.2). A.C. Davenhall and S.K. Leggett. Royal Observatory Edinburgh 1989.
